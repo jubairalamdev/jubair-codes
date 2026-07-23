@@ -54,6 +54,7 @@ export default async function Skills() {
                     key={skill.name}
                     icon={matched?.icon}
                     iconColor={matched?.color}
+                    className="px-4 py-2 text-xl"
                   >
                     {skill.name}
                   </Badge>
