@@ -1,7 +1,34 @@
+import {
+  FaReact,
+  FaNodeJs,
+  FaPython,
+  FaGitAlt,
+  FaDocker,
+} from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiPostgresql,
+  SiVercel,
+} from "react-icons/si";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import SectionHeader from "@/components/shared/SectionHeader";
 import Badge from "@/components/shared/Badge";
 import { getSkills } from "@/services/skills";
+
+const iconMap = {
+  React: FaReact,
+  "Next.js": SiNextdotjs,
+  TypeScript: SiTypescript,
+  "Tailwind CSS": SiTailwindcss,
+  "Node.js": FaNodeJs,
+  Python: FaPython,
+  PostgreSQL: SiPostgresql,
+  Git: FaGitAlt,
+  Docker: FaDocker,
+  Vercel: SiVercel,
+};
 
 export default async function Skills() {
   const skills = await getSkills();
@@ -21,7 +48,9 @@ export default async function Skills() {
             </h3>
             <div className="flex flex-wrap gap-2">
               {category.skills.map((skill) => (
-                <Badge key={skill.name}>{skill.name}</Badge>
+                <Badge key={skill.name} icon={iconMap[skill.name]}>
+                  {skill.name}
+                </Badge>
               ))}
             </div>
           </div>
@@ -29,18 +58,18 @@ export default async function Skills() {
 
         {skills.certifications.length > 0 && (
           <div>
-            <h3 className="mb-4 text-xs font-semibold text-secondary uppercase tracking-widest">
+            <h3 className="mb-4 text-xs font-semibold text-secondary uppercase tracking-widest font-heading">
               Certifications
             </h3>
             <div className="flex flex-col gap-3">
               {skills.certifications.map((cert) => (
                 <div
                   key={cert.name}
-                  className="flex items-center gap-3 rounded-xl border border-border px-4 py-3"
+                  className="flex items-center gap-3 rounded-xl border border-border bg-bg-subtle px-4 py-3"
                 >
                   <HiOutlineAcademicCap className="text-lg text-accent" />
                   <div>
-                    <p className="text-sm font-medium text-black">
+                    <p className="text-sm font-medium text-black font-heading">
                       {cert.name}
                     </p>
                     <p className="text-xs text-secondary">{cert.issuer}</p>
