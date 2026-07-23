@@ -52,7 +52,7 @@ export default function Navbar() {
                   aria-current={isActive ? "true" : undefined}
                   className={`text-sm font-medium transition-colors font-heading ${
                     isActive
-                      ? "text-primary"
+                      ? "text-accent"
                       : "text-secondary hover:text-black"
                   }`}
                 >
@@ -102,10 +102,10 @@ export default function Navbar() {
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
                   aria-current={isActive ? "true" : undefined}
-                  className={`block rounded-lg px-4 py-2 text-sm font-medium transition-colors font-heading ${
-                    isActive
-                      ? "text-primary bg-primary/5"
-                      : "text-secondary hover:text-black hover:bg-bg-subtle"
+                    className={`block rounded-lg px-4 py-2 text-sm font-medium transition-colors font-heading ${
+                      isActive
+                        ? "text-accent bg-accent/5"
+                        : "text-secondary hover:text-black hover:bg-bg-subtle"
                   }`}
                 >
                   {link.label}

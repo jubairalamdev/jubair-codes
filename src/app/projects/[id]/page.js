@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { HiArrowLeft } from "react-icons/hi2";
+import { HiArrowLeft, HiOutlineLink } from "react-icons/hi2";
+import { FaGithub } from "react-icons/fa";
 import Container from "@/components/shared/Container";
 import Badge from "@/components/shared/Badge";
 import { getProjects, getProjectById } from "@/services/projects";
@@ -29,7 +30,7 @@ export default async function ProjectDetails({ params }) {
           <h1 className="text-section font-semibold text-black font-heading">
             {project.title}
           </h1>
-          <div className="flex-1 border-t border-dashed border-border" />
+          <div className="flex-1 border-t border-dashed border-accent/40" />
         </div>
 
         <div className="mt-8 aspect-video w-full rounded-2xl bg-bg-subtle" />
@@ -136,8 +137,9 @@ export default async function ProjectDetails({ params }) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-hover font-heading"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-hover font-heading"
             >
+              <HiOutlineLink className="text-base" />
               Live Project
             </a>
           )}
@@ -146,8 +148,9 @@ export default async function ProjectDetails({ params }) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-border px-6 py-3 text-sm font-medium text-secondary transition-colors hover:border-secondary hover:text-black font-heading"
+              className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-secondary transition-colors hover:border-secondary hover:text-black font-heading"
             >
+              <FaGithub className="text-base" />
               GitHub Repository
             </a>
           )}
