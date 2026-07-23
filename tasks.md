@@ -44,11 +44,11 @@
 
 ## Phase 4: Projects
 
-- [ ] Build Project Card component
-- [ ] Build Projects section (category filtering, 3-column grid, responsive)
-- [ ] Build Project Details page (`app/projects/[id]/page.js`)
-- [ ] Add back navigation on Project Details page
-- [ ] Build Project Details content (preview, tech stack, contributions, challenges, future improvements, live/GitHub buttons)
+- [x] Build Project Card component
+- [x] Build Projects section (category filtering, 3-column grid, responsive)
+- [x] Build Project Details page (`app/projects/[id]/page.js`)
+- [x] Add back navigation on Project Details page
+- [x] Build Project Details content (preview, tech stack, contributions, challenges, future improvements, live/GitHub buttons)
 
 ---
 

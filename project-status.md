@@ -6,37 +6,31 @@
 
 ## Completed
 
-- [x] Project requirements documented (Frontend-PRD.md)
-- [x] Master design documented (Design-System/Master-Design.md)
-- [x] Design system docs scaffolded
-- [x] Tasks and project status tracking files created
 - [x] **Phase 1: Project Setup & Foundation** — Complete
 - [x] **Phase 2: Layout & Navigation** — Complete
-  - [x] Navbar: sticky, pill-shaped, responsive, mobile menu, active section indicator
-  - [x] Footer: centered, minimal, copyright
-  - [x] Smooth scroll via `scrollIntoView`
-  - [x] Active section tracking via IntersectionObserver custom hook
-  - [x] Shared Container component (1200px max-width)
-  - [x] Root layout updated with Navbar/Footer
+- [x] **Phase 3: Core Sections** — Complete
+  - [x] SectionHeader, Button, Badge, SocialButton shared components
+  - [x] Hero: status badge, heading, description, 3 action buttons, social links
+  - [x] About: section header, profile image placeholder, bio, location badge
+  - [x] Experience: timeline with job title, date, company badges, description, view details link
+  - [x] Skills: categorized skill badges, certifications
+  - [x] Hero + About side by side on desktop (2/3 + 1/3 grid)
 
 ---
 
 ## Current Phase
 
-**Phase 3: Core Sections** — Next up
+**Phase 4: Projects** — Next up
 
 ---
 
 ## Next Steps
 
-1. Build Section Header shared component
-2. Build Button component (primary, secondary, variants)
-3. Build Badge / Skill Badge component
-4. Build Social Button component
-5. Build Hero section
-6. Build About section
-7. Build Experience section
-8. Build Skills section
+1. Build Project Card component
+2. Build Projects section (category filtering, 3-column grid)
+3. Build Project Details page
+4. Add back navigation on Project Details page
+5. Build Project Details content (preview, tech stack, contributions, challenges, future improvements, links)
 
 ---
 
@@ -44,7 +38,6 @@
 
 - Static project — all data lives in JSON files inside `src/data/`
 - All application code under `src/`
-- Tailwind v4 — config via CSS `@theme`, no `tailwind.config.js`
+- Tailwind v4 — config via CSS `@theme`
 - Build verified — compiles successfully
 - Follow `Design-System/*.md` docs for each section when implementing
-- Target Lighthouse score: 90+
