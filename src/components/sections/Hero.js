@@ -7,13 +7,12 @@ import Button from "@/components/shared/Button";
 import SocialButton from "@/components/shared/SocialButton";
 
 const socials = [
-  { href: "https://github.com/jubair", icon: FaGithub, label: "GitHub" },
+  { href: "https://github.com/jubairalamdev", icon: FaGithub, label: "GitHub" },
   {
-    href: "https://linkedin.com/in/jubair",
+    href: "https://www.linkedin.com/in/jubair-alam-alif/",
     icon: FaLinkedinIn,
     label: "LinkedIn",
-  },
-  { href: "https://twitter.com/jubair", icon: FaTwitter, label: "Twitter" },
+  }
 ];
 
 export default function Hero() {
