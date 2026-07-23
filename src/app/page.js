@@ -1,27 +1,21 @@
+import Container from "@/components/shared/Container";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Experience from "@/components/sections/Experience";
+import Skills from "@/components/sections/Skills";
+
 export default function Home() {
   return (
-    <>
-      <section id="hero" className="py-24">
-        Hero
-      </section>
-      <section id="about" className="py-24">
-        About
-      </section>
-      <section id="experience" className="py-24">
-        Experience
-      </section>
-      <section id="skills" className="py-24">
-        Skills
-      </section>
-      <section id="projects" className="py-24">
-        Projects
-      </section>
-      <section id="testimonials" className="py-24">
-        Testimonials
-      </section>
-      <section id="contact" className="py-24">
-        Contact
-      </section>
-    </>
+    <Container className="flex flex-col gap-6 py-6">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="lg:col-span-2">
+          <Hero />
+        </div>
+        <About />
+      </div>
+
+      <Experience />
+      <Skills />
+    </Container>
   );
 }

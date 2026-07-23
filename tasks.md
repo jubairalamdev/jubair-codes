@@ -31,14 +31,14 @@
 
 ## Phase 3: Core Sections
 
-- [ ] Build Section Header shared component
-- [ ] Build Button component (primary, secondary, variants)
-- [ ] Build Badge / Skill Badge component
-- [ ] Build Social Button component
-- [ ] Build Hero section (intro, CTA buttons, resume download, social links)
-- [ ] Build About section (profile summary, image, personal info)
-- [ ] Build Experience section (timeline, company info, view details)
-- [ ] Build Skills section (categorized skills, skill badges, certifications)
+- [x] Build Section Header shared component
+- [x] Build Button component (primary, secondary, variants)
+- [x] Build Badge / Skill Badge component
+- [x] Build Social Button component
+- [x] Build Hero section (intro, CTA buttons, resume download, social links)
+- [x] Build About section (profile summary, image, personal info)
+- [x] Build Experience section (timeline, company info, view details)
+- [x] Build Skills section (categorized skills, skill badges, certifications)
 
 ---
 
