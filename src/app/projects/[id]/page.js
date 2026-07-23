@@ -18,26 +18,26 @@ export default async function ProjectDetails({ params }) {
       </Link>
 
       <article className="rounded-3xl border border-border bg-white p-6 md:p-10 shadow-sm">
-        <div className="flex flex-col gap-2">
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-accent" />
-            <span className="text-xs font-medium text-secondary uppercase tracking-wider">
-              Project
-            </span>
-          </div>
+        <div className="flex items-center gap-3">
+          <span className="h-2 w-2 shrink-0 rounded-full bg-black" />
           <h1 className="text-section font-semibold text-black font-heading">
             {project.title}
           </h1>
-          <div className="h-px w-full bg-border" />
+          <div className="flex-1 border-t border-dashed border-border" />
         </div>
 
-        <div className="mt-8 aspect-video w-full rounded-2xl bg-bg-subtle transition-transform duration-500 hover:scale-[1.01]" />
+        <div className="mt-8 aspect-video w-full rounded-2xl bg-bg-subtle" />
 
-        <p className="mt-8 max-w-3xl text-base leading-relaxed text-secondary">
-          {project.longDescription}
-        </p>
+        <div className="mt-10">
+          <h2 className="mb-4 text-base font-semibold text-black font-heading">
+            Project Overview
+          </h2>
+          <p className="max-w-3xl text-base leading-relaxed text-secondary">
+            {project.longDescription}
+          </p>
+        </div>
 
-        <div className="mt-8">
+        <div className="mt-10">
           <h2 className="mb-4 text-base font-semibold text-black font-heading">
             Technology Stack
           </h2>
@@ -48,9 +48,28 @@ export default async function ProjectDetails({ params }) {
           </div>
         </div>
 
+        {project.features && project.features.length > 0 && (
+          <div className="mt-10">
+            <h2 className="mb-4 text-base font-semibold text-black font-heading">
+              Features
+            </h2>
+            <ul className="flex flex-col gap-2">
+              {project.features.map((item, i) => (
+                <li
+                  key={i}
+                  className="flex items-start gap-2 text-sm text-secondary"
+                >
+                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {project.contributions && project.contributions.length > 0 && (
-          <div className="mt-8">
-            <h2 className="mb-3 text-base font-semibold text-black font-heading">
+          <div className="mt-10">
+            <h2 className="mb-4 text-base font-semibold text-black font-heading">
               Key Contributions
             </h2>
             <ul className="flex flex-col gap-2">
@@ -68,8 +87,8 @@ export default async function ProjectDetails({ params }) {
         )}
 
         {project.challenges && project.challenges.length > 0 && (
-          <div className="mt-8">
-            <h2 className="mb-3 text-base font-semibold text-black font-heading">
+          <div className="mt-10">
+            <h2 className="mb-4 text-base font-semibold text-black font-heading">
               Challenges Faced
             </h2>
             <ul className="flex flex-col gap-2">
@@ -87,8 +106,8 @@ export default async function ProjectDetails({ params }) {
         )}
 
         {project.improvements && project.improvements.length > 0 && (
-          <div className="mt-8">
-            <h2 className="mb-3 text-base font-semibold text-black font-heading">
+          <div className="mt-10">
+            <h2 className="mb-4 text-base font-semibold text-black font-heading">
               Future Improvements
             </h2>
             <ul className="flex flex-col gap-2">
