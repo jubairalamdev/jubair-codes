@@ -2,10 +2,16 @@ import Link from "next/link";
 import { HiArrowLeft } from "react-icons/hi2";
 import Container from "@/components/shared/Container";
 import Badge from "@/components/shared/Badge";
-import { getProjectById } from "@/services/projects";
+import { getProjects, getProjectById } from "@/services/projects";
+
+export async function generateStaticParams() {
+  const projects = await getProjects();
+  return projects.map((p) => ({ id: p.id }));
+}
 
 export default async function ProjectDetails({ params }) {
-  const project = await getProjectById(params.id);
+  const { id } = await params;
+  const project = await getProjectById(id);
   if (!project) return null;
 
   return (
