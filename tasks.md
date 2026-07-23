@@ -66,11 +66,13 @@
 
 ## Phase 6: Animations & Interactions
 
-- [ ] Define shared Framer Motion variants (entrance, scroll, hover)
-- [ ] Add entrance animations to all sections
-- [ ] Add scroll-triggered reveal animations
-- [ ] Add hover interactions to cards, buttons, badges
-- [ ] Add smooth page transitions
+- [x] Audit and verify all hover interactions (buttons, cards, nav links, badges, social icons)
+- [x] Add thumbnail zoom on hover to ProjectCard and Project Details preview
+- [x] Add smooth mobile menu transition (opacity + translate)
+- [x] Ensure consistent `transition-colors` across all interactive elements
+- [x] Smooth scroll behavior (scroll-smooth, scrollIntoView)
+
+> Note: Per `motion.md` — no Framer Motion, no GSAP, no scroll reveal animations, no decorative animations.
 
 ---
 

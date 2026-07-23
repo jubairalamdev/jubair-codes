@@ -31,7 +31,7 @@ export default function ProjectDetails({ params }) {
           <div className="h-px w-full bg-border" />
         </div>
 
-        <div className="mt-8 aspect-video w-full rounded-2xl bg-bg-subtle" />
+        <div className="mt-8 aspect-video w-full rounded-2xl bg-bg-subtle transition-transform duration-500 hover:scale-[1.01]" />
 
         <p className="mt-8 max-w-3xl text-base leading-relaxed text-secondary">
           {project.longDescription}

@@ -67,9 +67,14 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {mobileOpen && (
-        <div className="mx-auto mt-2 max-w-[1200px] px-6 md:hidden">
-          <ul className="rounded-2xl border border-border bg-white p-4 shadow-sm flex flex-col gap-1">
+      <div
+        className={`mx-auto mt-2 max-w-[1200px] px-6 transition-all duration-200 md:hidden ${
+          mobileOpen
+            ? "visible translate-y-0 opacity-100 pointer-events-auto"
+            : "invisible -translate-y-1 opacity-0 pointer-events-none"
+        }`}
+      >
+        <ul className="rounded-2xl border border-border bg-white p-4 shadow-sm flex flex-col gap-1">
             {navLinks.map((link) => {
               const isActive = activeSection === link.href.replace("#", "");
               return (
@@ -99,8 +104,7 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
-        </div>
-      )}
+      </div>
     </header>
   );
 }
