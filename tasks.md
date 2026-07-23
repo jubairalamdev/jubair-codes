@@ -54,13 +54,13 @@
 
 ## Phase 5: Testimonials, Contact & Footer
 
-- [ ] Build Testimonials section (responsive cards, optional carousel)
-- [ ] Build Contact section (info, form, social links)
-- [ ] Build Form Input component
-- [ ] Implement form validation
-- [ ] Implement form submission with toast notification
-- [ ] Build Contact Card component
-- [ ] Build Toast component / integrate React Toastify
+- [x] Build Testimonials section (responsive cards, optional carousel)
+- [x] Build Contact section (info, form, social links)
+- [x] Build Form Input component
+- [x] Implement form validation
+- [x] Implement form submission with toast notification
+- [x] Build Contact Card component
+- [x] Integrate React Toastify (ToastContainer in root layout)
 
 ---
 

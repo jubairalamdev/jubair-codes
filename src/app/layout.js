@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
+import { ToastContainer } from "react-toastify";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 
 const inter = Inter({
@@ -42,6 +44,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="flex-1 pt-24">{children}</main>
         <Footer />
+        <ToastContainer />
       </body>
     </html>
   );
