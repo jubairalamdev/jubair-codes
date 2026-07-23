@@ -2,10 +2,10 @@ import Link from "next/link";
 import { HiArrowLeft } from "react-icons/hi2";
 import Container from "@/components/shared/Container";
 import Badge from "@/components/shared/Badge";
-import projects from "@/data/projects.json";
+import { getProjectById } from "@/services/projects";
 
-export default function ProjectDetails({ params }) {
-  const project = projects.find((p) => p.id === params.id);
+export default async function ProjectDetails({ params }) {
+  const project = await getProjectById(params.id);
   if (!project) return null;
 
   return (

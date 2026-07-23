@@ -1,9 +1,11 @@
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import SectionHeader from "@/components/shared/SectionHeader";
 import Badge from "@/components/shared/Badge";
-import skills from "@/data/skills.json";
+import { getSkills } from "@/services/skills";
 
-export default function Skills() {
+export default async function Skills() {
+  const skills = await getSkills();
+
   return (
     <section
       id="skills"

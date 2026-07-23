@@ -98,3 +98,16 @@
 - [ ] Verify live site (all sections, links, forms, animations)
 - [ ] Final Lighthouse audit
 - [ ] Push to GitHub
+
+---
+
+## Phase 9: Data Layer & Services
+
+- [x] Create `src/services/experience.js` — `getExperiences()`
+- [x] Create `src/services/projects.js` — `getProjects()`, `getProjectById()`, `getCategories()`
+- [x] Create `src/services/skills.js` — `getSkills()`
+- [x] Create `src/services/personal-info.js` — `getPersonalInfo()`
+- [x] Update server components to use services (About, Experience, Skills, Project Details)
+- [x] Client components retain direct imports for now (Hero, Projects, Contact)
+
+> Service layer abstracts data access. To swap to a real backend, replace each service function body with `fetch("/api/...")` — no component changes needed.

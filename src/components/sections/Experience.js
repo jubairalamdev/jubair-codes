@@ -1,9 +1,11 @@
 import { HiArrowRight } from "react-icons/hi2";
 import SectionHeader from "@/components/shared/SectionHeader";
 import Badge from "@/components/shared/Badge";
-import experience from "@/data/experience.json";
+import { getExperiences } from "@/services/experience";
 
-export default function Experience() {
+export default async function Experience() {
+  const experience = await getExperiences();
+
   return (
     <section
       id="experience"
@@ -13,7 +15,10 @@ export default function Experience() {
 
       <div className="mt-8 flex flex-col divide-y divide-border">
         {experience.map((item) => (
-          <div key={item.id} className="flex flex-col gap-3 py-6 first:pt-0 last:pb-0">
+          <div
+            key={item.id}
+            className="flex flex-col gap-3 py-6 first:pt-0 last:pb-0"
+          >
             <div className="flex items-start justify-between gap-4">
               <h3 className="text-card font-semibold text-black">
                 {item.role}

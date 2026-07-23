@@ -1,9 +1,11 @@
 import { HiOutlineMapPin } from "react-icons/hi2";
 import SectionHeader from "@/components/shared/SectionHeader";
 import Badge from "@/components/shared/Badge";
-import personalInfo from "@/data/personal-info.json";
+import { getPersonalInfo } from "@/services/personal-info";
 
-export default function About() {
+export default async function About() {
+  const personalInfo = await getPersonalInfo();
+
   return (
     <section
       id="about"
@@ -12,7 +14,11 @@ export default function About() {
       <SectionHeader title="About" />
 
       <div className="flex flex-col items-center gap-6">
-        <div className="h-20 w-20 md:h-28 md:w-28 rounded-full border border-border bg-bg-subtle shadow-sm" role="img" aria-label="Profile photo placeholder" />
+        <div
+          className="h-20 w-20 md:h-28 md:w-28 rounded-full border border-border bg-bg-subtle shadow-sm"
+          role="img"
+          aria-label="Profile photo placeholder"
+        />
 
         <div className="flex flex-col gap-4 text-left">
           <p className="text-base leading-relaxed text-secondary">
