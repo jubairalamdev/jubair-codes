@@ -14,7 +14,7 @@ export default function ProjectCard({ project }) {
       </div>
 
       <div className="flex flex-1 flex-col gap-3 p-5">
-        <h3 className="text-card font-semibold text-black">
+        <h3 className="text-card font-semibold text-black font-heading">
           {project.title}
         </h3>
 

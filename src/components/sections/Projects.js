@@ -30,7 +30,7 @@ export default function Projects() {
           <button
             key={cat}
             onClick={() => setActive(cat)}
-            className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors ${
+            className={`rounded-full px-4 py-1.5 text-sm font-medium transition-colors font-heading ${
               active === cat
                 ? "bg-primary text-white"
                 : "border border-border text-secondary hover:border-secondary hover:text-black"

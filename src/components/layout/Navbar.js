@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <nav className="mx-auto flex max-w-[1200px] items-center justify-between rounded-full border border-border bg-white/90 px-8 py-3 shadow-sm backdrop-blur-md mt-4">
-        <span className="text-sm font-semibold text-black">Jubair</span>
+        <span className="text-sm font-semibold text-black font-heading">Jubair</span>
 
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => {
@@ -35,7 +35,7 @@ export default function Navbar() {
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
                   aria-current={isActive ? "true" : undefined}
-                  className={`text-sm font-medium transition-colors ${
+                  className={`text-sm font-medium transition-colors font-heading ${
                     isActive
                       ? "text-primary"
                       : "text-secondary hover:text-black"
@@ -53,7 +53,7 @@ export default function Navbar() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex rounded-full bg-primary px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-hover"
+            className="hidden md:inline-flex rounded-full bg-primary px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-primary-hover font-heading"
           >
             Download CV
           </a>
@@ -84,7 +84,7 @@ export default function Navbar() {
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
                     aria-current={isActive ? "true" : undefined}
-                    className={`block rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
+                    className={`block rounded-lg px-4 py-2 text-sm font-medium transition-colors font-heading ${
                       isActive
                         ? "text-primary bg-primary/5"
                         : "text-secondary hover:text-black hover:bg-bg-subtle"
@@ -100,7 +100,7 @@ export default function Navbar() {
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block rounded-full bg-primary px-5 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-primary-hover"
+                className="block rounded-full bg-primary px-5 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-primary-hover font-heading"
               >
                 Download CV
               </a>

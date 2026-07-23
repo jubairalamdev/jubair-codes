@@ -16,6 +16,7 @@
   --color-text-body: #334155;
 
   --font-sans: "Inter", "Geist", system-ui, sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
 
   --text-hero: 3.5rem;
   --text-hero--line-height: 1.1;

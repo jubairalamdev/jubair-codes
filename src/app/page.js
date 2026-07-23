@@ -16,8 +16,10 @@ export default function Home() {
         <About />
       </div>
 
-      <Experience />
-      <Skills />
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+        <Experience />
+        <Skills />
+      </div>
       <Projects />
       <Contact />
     </Container>

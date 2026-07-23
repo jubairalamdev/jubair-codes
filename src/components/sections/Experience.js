@@ -20,7 +20,7 @@ export default async function Experience() {
             className="flex flex-col gap-3 py-6 first:pt-0 last:pb-0"
           >
             <div className="flex items-start justify-between gap-4">
-              <h3 className="text-card font-semibold text-black">
+              <h3 className="text-card font-semibold text-black font-heading">
                 {item.role}
               </h3>
               <span className="shrink-0 text-sm text-secondary">

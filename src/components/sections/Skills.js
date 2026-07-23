@@ -16,7 +16,7 @@ export default async function Skills() {
       <div className="mt-8 flex flex-col gap-8">
         {skills.categories.map((category) => (
           <div key={category.name}>
-            <h3 className="mb-4 text-xs font-semibold text-secondary uppercase tracking-widest">
+            <h3 className="mb-4 text-xs font-semibold text-secondary uppercase tracking-widest font-heading">
               {category.name}
             </h3>
             <div className="flex flex-wrap gap-2">

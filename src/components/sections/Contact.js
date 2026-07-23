@@ -159,7 +159,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={submitting}
-            className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-hover disabled:opacity-60"
+            className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-hover disabled:opacity-60 font-heading"
           >
             <HiPaperAirplane className="text-base" />
             {submitting ? "Sending..." : "Send Message"}

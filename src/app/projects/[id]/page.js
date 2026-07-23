@@ -25,7 +25,7 @@ export default async function ProjectDetails({ params }) {
               Project
             </span>
           </div>
-          <h1 className="text-section font-semibold text-black">
+          <h1 className="text-section font-semibold text-black font-heading">
             {project.title}
           </h1>
           <div className="h-px w-full bg-border" />
@@ -38,7 +38,7 @@ export default async function ProjectDetails({ params }) {
         </p>
 
         <div className="mt-8">
-          <h2 className="mb-4 text-base font-semibold text-black">
+          <h2 className="mb-4 text-base font-semibold text-black font-heading">
             Technology Stack
           </h2>
           <div className="flex flex-wrap gap-2">
@@ -50,7 +50,7 @@ export default async function ProjectDetails({ params }) {
 
         {project.contributions && project.contributions.length > 0 && (
           <div className="mt-8">
-            <h2 className="mb-3 text-base font-semibold text-black">
+            <h2 className="mb-3 text-base font-semibold text-black font-heading">
               Key Contributions
             </h2>
             <ul className="flex flex-col gap-2">
@@ -69,7 +69,7 @@ export default async function ProjectDetails({ params }) {
 
         {project.challenges && project.challenges.length > 0 && (
           <div className="mt-8">
-            <h2 className="mb-3 text-base font-semibold text-black">
+            <h2 className="mb-3 text-base font-semibold text-black font-heading">
               Challenges Faced
             </h2>
             <ul className="flex flex-col gap-2">
@@ -88,7 +88,7 @@ export default async function ProjectDetails({ params }) {
 
         {project.improvements && project.improvements.length > 0 && (
           <div className="mt-8">
-            <h2 className="mb-3 text-base font-semibold text-black">
+            <h2 className="mb-3 text-base font-semibold text-black font-heading">
               Future Improvements
             </h2>
             <ul className="flex flex-col gap-2">
@@ -111,7 +111,7 @@ export default async function ProjectDetails({ params }) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-hover"
+              className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary-hover font-heading"
             >
               Live Project
             </a>
@@ -121,7 +121,7 @@ export default async function ProjectDetails({ params }) {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full border border-border px-6 py-3 text-sm font-medium text-secondary transition-colors hover:border-secondary hover:text-black"
+              className="rounded-full border border-border px-6 py-3 text-sm font-medium text-secondary transition-colors hover:border-secondary hover:text-black font-heading"
             >
               GitHub Repository
             </a>

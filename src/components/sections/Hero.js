@@ -25,12 +25,12 @@ export default function Hero() {
       <div className="pointer-events-none absolute -top-40 -right-40 h-80 w-80 rounded-full bg-accent/5 blur-3xl" />
 
       <div className="relative flex flex-col items-start gap-6">
-        <span className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1 text-xs text-secondary">
+        <span className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1 text-xs text-secondary font-heading">
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
           Available for opportunities
         </span>
 
-        <h1 className="max-w-3xl text-3xl md:text-hero font-bold text-black leading-tight">
+        <h1 className="max-w-3xl text-3xl md:text-hero font-bold text-black leading-tight font-heading">
           {personalInfo.name}.<br />
           {personalInfo.title}.
         </h1>
