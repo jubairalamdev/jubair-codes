@@ -1,4 +1,6 @@
 import { Inter } from "next/font/google";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const inter = Inter({
@@ -36,7 +38,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} h-full scroll-smooth`}>
-      <body className="min-h-full flex flex-col antialiased">{children}</body>
+      <body className="min-h-full flex flex-col antialiased">
+        <Navbar />
+        <main className="flex-1 pt-24">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

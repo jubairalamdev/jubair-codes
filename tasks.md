@@ -21,10 +21,11 @@
 ## Phase 2: Layout & Navigation
 
 - [x] Build root layout (`app/layout.js`)
-- [ ] Build Navbar component (sticky, responsive, mobile menu, active section indicator)
-- [ ] Build Footer component (copyright, simple layout)
-- [ ] Implement smooth scroll behavior
-- [ ] Implement active section tracking on scroll (Intersection Observer)
+- [x] Build shared Container component (1200px max-width)
+- [x] Build Navbar component (sticky, responsive, mobile menu, active section indicator)
+- [x] Build Footer component (copyright, simple layout)
+- [x] Implement smooth scroll behavior
+- [x] Implement active section tracking on scroll (Intersection Observer)
 
 ---
 

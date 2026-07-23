@@ -8,33 +8,35 @@
 
 - [x] Project requirements documented (Frontend-PRD.md)
 - [x] Master design documented (Design-System/Master-Design.md)
-- [x] Design system docs scaffolded (Colors, Typography, Layout, Components, Motion, per-section docs)
+- [x] Design system docs scaffolded
 - [x] Tasks and project status tracking files created
 - [x] **Phase 1: Project Setup & Foundation** — Complete
-  - [x] Next.js initialized with App Router
-  - [x] Dependencies installed (Tailwind CSS v4, Framer Motion, React Icons, React Toastify, React Compiler)
-  - [x] Tailwind CSS v4 configured with semantic color tokens and typography scale via `@theme`
-  - [x] Folder structure created (`src/` based)
-  - [x] Global styles set up
-  - [x] Root layout with metadata, OG/Twitter cards, SEO base
-  - [x] Custom font (Inter) configured
-  - [x] JSON data files created (projects, experience, skills, testimonials, personal info)
-  - [x] Constants defined (navigation, social links, site config)
+- [x] **Phase 2: Layout & Navigation** — Complete
+  - [x] Navbar: sticky, pill-shaped, responsive, mobile menu, active section indicator
+  - [x] Footer: centered, minimal, copyright
+  - [x] Smooth scroll via `scrollIntoView`
+  - [x] Active section tracking via IntersectionObserver custom hook
+  - [x] Shared Container component (1200px max-width)
+  - [x] Root layout updated with Navbar/Footer
 
 ---
 
 ## Current Phase
 
-**Phase 2: Layout & Navigation** — Next up
+**Phase 3: Core Sections** — Next up
 
 ---
 
 ## Next Steps
 
-1. Build Navbar component (sticky, responsive, mobile menu, active section indicator)
-2. Build Footer component (copyright, simple layout)
-3. Implement smooth scroll behavior
-4. Implement active section tracking on scroll (Intersection Observer)
+1. Build Section Header shared component
+2. Build Button component (primary, secondary, variants)
+3. Build Badge / Skill Badge component
+4. Build Social Button component
+5. Build Hero section
+6. Build About section
+7. Build Experience section
+8. Build Skills section
 
 ---
 
