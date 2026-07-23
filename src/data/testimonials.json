@@ -1,0 +1,26 @@
+[
+  {
+    "id": "test-1",
+    "name": "Client Name",
+    "role": "Product Manager",
+    "company": "Company Name",
+    "text": "An exceptional developer who consistently delivers high-quality work. A true asset to any team.",
+    "avatar": "/images/testimonial-1.jpg"
+  },
+  {
+    "id": "test-2",
+    "name": "Another Client",
+    "role": "CTO",
+    "company": "Tech Company",
+    "text": "One of the best developers I've worked with. Deep technical knowledge and great communication skills.",
+    "avatar": "/images/testimonial-2.jpg"
+  },
+  {
+    "id": "test-3",
+    "name": "Colleague Name",
+    "role": "Engineering Lead",
+    "company": "Software Firm",
+    "text": "Always goes above and beyond. A pleasure to collaborate with on complex projects.",
+    "avatar": "/images/testimonial-3.jpg"
+  }
+]

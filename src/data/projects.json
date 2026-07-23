@@ -1,0 +1,85 @@
+[
+  {
+    "id": "project-1",
+    "title": "Project One",
+    "description": "A full-stack web application built with modern technologies.",
+    "longDescription": "Detailed description of the project, covering what it does, who it's for, and why it was built.",
+    "category": "full-stack",
+    "image": "/images/project-1.jpg",
+    "tags": ["React", "Node.js", "PostgreSQL"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/jubair/project-one",
+    "features": [
+      "User authentication and authorization",
+      "Real-time data updates",
+      "Responsive dashboard"
+    ],
+    "challenges": [
+      "Handling real-time WebSocket connections at scale",
+      "Optimizing database queries for large datasets"
+    ],
+    "improvements": [
+      "Add end-to-end testing",
+      "Implement caching layer"
+    ],
+    "contributions": [
+      "Designed and built the frontend architecture",
+      "Implemented RESTful API endpoints"
+    ]
+  },
+  {
+    "id": "project-2",
+    "title": "Project Two",
+    "description": "An interactive data visualization dashboard.",
+    "longDescription": "Detailed description of the project, covering what it does, who it's for, and why it was built.",
+    "category": "frontend",
+    "image": "/images/project-2.jpg",
+    "tags": ["React", "D3.js", "TypeScript"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/jubair/project-two",
+    "features": [
+      "Interactive charts and graphs",
+      "Data filtering and export",
+      "Dark mode support"
+    ],
+    "challenges": [
+      "Rendering large datasets without performance degradation"
+    ],
+    "improvements": [
+      "Add more chart types",
+      "Improve mobile responsiveness"
+    ],
+    "contributions": [
+      "Built all data visualization components",
+      "Implemented state management with Redux"
+    ]
+  },
+  {
+    "id": "project-3",
+    "title": "Project Three",
+    "description": "A mobile-first e-commerce platform.",
+    "longDescription": "Detailed description of the project, covering what it does, who it's for, and why it was built.",
+    "category": "full-stack",
+    "image": "/images/project-3.jpg",
+    "tags": ["Next.js", "Stripe", "MongoDB"],
+    "liveUrl": "https://example.com",
+    "githubUrl": "https://github.com/jubair/project-three",
+    "features": [
+      "Product catalog with search and filters",
+      "Shopping cart and checkout",
+      "Payment integration with Stripe"
+    ],
+    "challenges": [
+      "Implementing secure payment flow",
+      "Managing inventory in real-time"
+    ],
+    "improvements": [
+      "Add multi-vendor support",
+      "Implement wishlist functionality"
+    ],
+    "contributions": [
+      "Developed the entire checkout flow",
+      "Integrated Stripe payment gateway"
+    ]
+  }
+]

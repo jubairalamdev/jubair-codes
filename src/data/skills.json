@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "name": "Frontend",
+      "skills": [
+        { "name": "React", "level": "expert" },
+        { "name": "Next.js", "level": "expert" },
+        { "name": "TypeScript", "level": "advanced" },
+        { "name": "Tailwind CSS", "level": "expert" }
+      ]
+    },
+    {
+      "name": "Backend",
+      "skills": [
+        { "name": "Node.js", "level": "advanced" },
+        { "name": "Python", "level": "intermediate" },
+        { "name": "PostgreSQL", "level": "intermediate" }
+      ]
+    },
+    {
+      "name": "Tools",
+      "skills": [
+        { "name": "Git", "level": "expert" },
+        { "name": "Docker", "level": "intermediate" },
+        { "name": "Vercel", "level": "advanced" }
+      ]
+    }
+  ],
+  "certifications": [
+    { "name": "AWS Certified Developer", "issuer": "Amazon" }
+  ]
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "exp-1",
+    "company": "Company Name",
+    "role": "Senior Software Developer",
+    "period": "Jan 2024 — Present",
+    "description": "Leading frontend development and architecting scalable solutions.",
+    "highlights": [
+      "Built and maintained multiple production applications",
+      "Mentored junior developers"
+    ]
+  },
+  {
+    "id": "exp-2",
+    "company": "Previous Company",
+    "role": "Software Developer",
+    "period": "Mar 2022 — Dec 2023",
+    "description": "Developed and shipped features for the core product.",
+    "highlights": [
+      "Migrated legacy codebase to modern framework",
+      "Improved application performance by 40%"
+    ]
+  },
+  {
+    "id": "exp-3",
+    "company": "Earlier Company",
+    "role": "Junior Developer",
+    "period": "Jun 2020 — Feb 2022",
+    "description": "Contributed to multiple client projects.",
+    "highlights": [
+      "Delivered 10+ client projects on time",
+      "Introduced code review processes"
+    ]
+  }
+]
