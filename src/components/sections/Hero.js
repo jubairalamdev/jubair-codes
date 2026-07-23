@@ -25,15 +25,17 @@ export default function Hero() {
       <div className="pointer-events-none absolute -top-40 -right-40 h-80 w-80 rounded-full bg-accent/5 blur-3xl" />
 
       <div className="relative flex flex-col items-start gap-6">
-        <span className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1 text-xs text-secondary font-heading">
-          <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-          Available for opportunities
+        <span className="inline-flex items-center gap-2 rounded-full border border-green-300 px-3 py-1 text-xs text-secondary font-heading">
+          <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+          Building MERN Stack Applications
         </span>
 
         <h1 className="max-w-3xl text-3xl md:text-hero font-bold text-black leading-tight font-heading">
           {personalInfo.name}.<br />
-          {personalInfo.title}.
         </h1>
+        <h2 className="max-w-3xl -mt-5 text-2xl md:text-3xl font-semibold text-black/80 leading-tight font-heading">
+          {personalInfo.title}.
+        </h2>
 
         <p className="max-w-lg text-lg leading-relaxed text-secondary">
           {personalInfo.tagline}. {personalInfo.bio}
@@ -44,13 +46,6 @@ export default function Hero() {
             View Projects
           </Button>
           <Button
-            href="#contact"
-            variant="secondary"
-            icon={HiOutlineEye}
-          >
-            Let&apos;s Talk
-          </Button>
-          <Button
             href={personalInfo.resumeUrl}
             variant="outline"
             icon={HiDownload}
@@ -59,9 +54,9 @@ export default function Hero() {
           </Button>
         </div>
 
-        <div className="mt-4 flex items-center gap-4 rounded-xl border border-border px-5 py-3">
+        <div className="-ml-12 mt-4 flex items-center gap-4 bg-gray-100 rounded-r-full border border-border px-5 py-3">
           <span className="text-xs font-medium text-secondary uppercase tracking-wider">
-            Social
+            Connet
           </span>
           <div className="flex items-center gap-2">
             {socials.map((s) => (

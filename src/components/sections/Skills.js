@@ -12,7 +12,6 @@ import {
   SiPostgresql,
   SiVercel,
 } from "react-icons/si";
-import { HiOutlineAcademicCap } from "react-icons/hi2";
 import SectionHeader from "@/components/shared/SectionHeader";
 import Badge from "@/components/shared/Badge";
 import { getSkills } from "@/services/skills";
@@ -64,29 +63,7 @@ export default async function Skills() {
           </div>
         ))}
 
-        {skills.certifications.length > 0 && (
-          <div>
-            <h3 className="mb-4 text-xs font-semibold text-secondary uppercase tracking-widest font-heading">
-              Certifications
-            </h3>
-            <div className="flex flex-col gap-3">
-              {skills.certifications.map((cert) => (
-                <div
-                  key={cert.name}
-                  className="flex items-center gap-3 rounded-xl border border-border bg-bg-subtle px-4 py-3"
-                >
-                  <HiOutlineAcademicCap className="text-lg text-accent" />
-                  <div>
-                    <p className="text-sm font-medium text-black font-heading">
-                      {cert.name}
-                    </p>
-                    <p className="text-xs text-secondary">{cert.issuer}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+
       </div>
     </section>
   );

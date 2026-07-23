@@ -1,12 +1,12 @@
 [
   {
-    "id": "project-1",
-    "title": "Project One",
-    "description": "A full-stack web application built with modern technologies.",
+    "id": "digital-life-lessons",
+    "title": "Digital Life Lessons",
+    "description": "Digital Life Lessons is a Full Stack MERN Project with every social media like features available.",
     "longDescription": "Detailed description of the project, covering what it does, who it's for, and why it was built.",
     "category": "full-stack",
-    "image": "/images/project-1.jpg",
-    "tags": ["React", "Node.js", "PostgreSQL"],
+    "image": "/assets/digital-life-lessons.png",
+    "tags": ["Next.js", "Node.js", "MongoDB", "Stripe", "Tailwind CSS", "Javascript", "React", "Express.js", "Better Auth"],
     "liveUrl": "https://example.com",
     "githubUrl": "https://github.com/jubair/project-one",
     "features": [
@@ -28,13 +28,13 @@
     ]
   },
   {
-    "id": "project-2",
-    "title": "Project Two",
-    "description": "An interactive data visualization dashboard.",
+    "id": "paw-pals",
+    "title": "Paw Pals",
+    "description": "A home for every pets to get adopted with their best buddies. This website covers a economical system.",
     "longDescription": "Detailed description of the project, covering what it does, who it's for, and why it was built.",
-    "category": "frontend",
-    "image": "/images/project-2.jpg",
-    "tags": ["React", "D3.js", "TypeScript"],
+    "category": "full-stack",
+    "image": "/assets/paw-pals.png",
+    "tags": ["Next.js", "React.js", "Javascript", "Tailwind CSS", "Node.js", "MongoDB", "Express.js", "Better Auth"],
     "liveUrl": "https://example.com",
     "githubUrl": "https://github.com/jubair/project-two",
     "features": [
@@ -55,13 +55,13 @@
     ]
   },
   {
-    "id": "project-3",
-    "title": "Project Three",
-    "description": "A mobile-first e-commerce platform.",
+    "id": "cloud-read",
+    "title": "Cloud Read",
+    "description": "Cloud Read is a Fully Frontend project focusing on a library website system that is fully functional",
     "longDescription": "Detailed description of the project, covering what it does, who it's for, and why it was built.",
     "category": "full-stack",
-    "image": "/images/project-3.jpg",
-    "tags": ["Next.js", "Stripe", "MongoDB"],
+    "image": "/assets/cloud-read.png",
+    "tags": ["Next.js", "MongoDB", "Stripe", "Tailwind CSS", "Javascript", "React", "Better Auth"],
     "liveUrl": "https://example.com",
     "githubUrl": "https://github.com/jubair/project-three",
     "features": [

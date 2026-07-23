@@ -1,32 +1,35 @@
 {
   "categories": [
     {
-      "name": "Frontend",
+      "name": "Core Technologies",
       "skills": [
         { "name": "React", "level": "expert" },
         { "name": "Next.js", "level": "expert" },
+        { "name": "JavaScript", "level": "advanced" },
         { "name": "TypeScript", "level": "advanced" },
-        { "name": "Tailwind CSS", "level": "expert" }
-      ]
-    },
-    {
-      "name": "Backend",
-      "skills": [
+        { "name": "Tailwind CSS", "level": "expert" },
+        { "name": "HTML", "level": "expert" },
+        { "name": "CSS", "level": "expert" },
         { "name": "Node.js", "level": "advanced" },
-        { "name": "Python", "level": "intermediate" },
-        { "name": "PostgreSQL", "level": "intermediate" }
-      ]
-    },
-    {
-      "name": "Tools",
-      "skills": [
+        { "name": "Express.js", "level": "advanced" },
+        { "name": "MongoDB", "level": "advanced" },
         { "name": "Git", "level": "expert" },
         { "name": "Docker", "level": "intermediate" },
-        { "name": "Vercel", "level": "advanced" }
+        { "name": "Vercel", "level": "advanced" },
+        { "name": "Better Auth", "level": "advanced" },
+        { "name": "JWT Authentication", "level": "advanced" }
+      ]
+    },
+    {
+      "name": "Other Skills",
+      "skills": [
+        { "name": "WordPress", "level": "advanced" },
+        { "name": "Linux", "level": "intermediate" },
+        { "name": "Claude Code", "level": "intermediate" }
       ]
     }
   ],
   "certifications": [
-    { "name": "AWS Certified Developer", "issuer": "Amazon" }
+    { "name": "Complete AI Web Development Bootcamp", "issuer": "Programming Hero" }
   ]
 }

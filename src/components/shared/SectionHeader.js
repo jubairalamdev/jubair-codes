@@ -9,7 +9,7 @@ export default function SectionHeader({ title, icon: Icon }) {
       <h2 className="text-sm font-medium text-black uppercase tracking-wider font-heading">
         {title}
       </h2>
-      <div className="flex-1 border-t border-dashed border-accent/40" />
+      <div className="flex-1 border-t border-dashed border-black/70" />
     </div>
   );
 }

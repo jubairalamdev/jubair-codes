@@ -1,8 +1,9 @@
 {
-  "name": "Jubair",
-  "title": "Software Developer",
+  "name": "Jubair Alam Alif",
+  "title": "MERN Stack Web Developer",
   "tagline": "Building modern web experiences",
-  "bio": "A passionate software developer focused on building clean, performant, and accessible web applications.",
+  "bio": "A passionate web developer focused on building clean, performant, and useful web applications.",
+  "description": "I am a MERN Stack Web Developer with a passion for building modern web applications. I have experience in developing full-stack applications using MongoDB, Express.js, React.js, and Node.js. I am always eager to learn new technologies and improve my skills.",
   "email": "hello@jubair.dev",
   "location": "Dhaka, Bangladesh",
   "resumeUrl": "/resume.pdf",

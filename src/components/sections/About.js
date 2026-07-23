@@ -2,6 +2,7 @@ import { HiOutlineMapPin } from "react-icons/hi2";
 import SectionHeader from "@/components/shared/SectionHeader";
 import Badge from "@/components/shared/Badge";
 import { getPersonalInfo } from "@/services/personal-info";
+import Image from "next/image";
 
 export default async function About() {
   const personalInfo = await getPersonalInfo();
@@ -14,23 +15,23 @@ export default async function About() {
       <SectionHeader title="About" />
 
       <div className="flex flex-col items-center gap-6">
-        <div
-          className="h-20 w-20 md:h-28 md:w-28 rounded-full border border-border bg-bg-subtle shadow-sm"
+        <Image
+          src="/profile.png"
+          alt="Profile photo"
+          width={350}
+          height={350}
+          className="h-35 w-35 md:h-38 md:w-38 rounded-full border-4 border-gray-400 bg-bg-subtle shadow-sm"
           role="img"
           aria-label="Profile photo placeholder"
         />
 
         <div className="flex flex-col gap-4 text-left">
           <p className="text-base leading-relaxed text-secondary">
-            {personalInfo.bio}
-          </p>
-          <p className="text-base leading-relaxed text-secondary">
-            I focus on building clean, performant, and accessible web
-            applications that deliver great user experiences.
+            {personalInfo.description}
           </p>
         </div>
 
-        <Badge icon={HiOutlineMapPin}>{personalInfo.location}</Badge>
+        <Badge icon={HiOutlineMapPin} className="text-[16px]">{personalInfo.location}</Badge>
       </div>
     </section>
   );

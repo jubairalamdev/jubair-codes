@@ -5,7 +5,7 @@ import Badge from "@/components/shared/Badge";
 export default function ProjectCard({ project }) {
   return (
     <article className="group flex flex-col rounded-2xl border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md">
-      <div className="relative aspect-video overflow-hidden rounded-t-2xl bg-bg-subtle">
+      <div className="relative aspect-video overflow-hidden rounded-t-2xl bg-bg-subtle" style={{ backgroundImage: `url(${project.image})`, backgroundSize: 'cover', backgroundPosition: 'top' }}>
         <div className="absolute top-3 left-3 z-10">
           <span className="rounded-full border border-border bg-white/90 px-3 py-1 text-xs text-secondary backdrop-blur-sm">
             {project.category}
@@ -23,7 +23,7 @@ export default function ProjectCard({ project }) {
         </p>
 
         <div className="flex flex-wrap gap-1.5">
-          {project.tags.slice(0, 4).map((tag) => (
+          {project.tags.map((tag) => (
             <Badge key={tag}>{tag}</Badge>
           ))}
         </div>

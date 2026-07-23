@@ -1,10 +1,12 @@
-import { HiArrowRight } from "react-icons/hi2";
+import { HiArrowRight, HiOutlineAcademicCap } from "react-icons/hi2";
 import SectionHeader from "@/components/shared/SectionHeader";
 import Badge from "@/components/shared/Badge";
 import { getExperiences } from "@/services/experience";
+import { getSkills } from "@/services/skills";
 
 export default async function Experience() {
   const experience = await getExperiences();
+  const skills = await getSkills();
 
   return (
     <section
@@ -35,16 +37,31 @@ export default async function Experience() {
             <p className="max-w-2xl text-base leading-relaxed text-secondary">
               {item.description}
             </p>
-
-            <a
-              href="#"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent-hover"
-            >
-              View Details <HiArrowRight className="text-xs" />
-            </a>
           </div>
         ))}
       </div>
+
+      {skills.certifications.length > 0 && (
+        <div className="mt-10">
+          <SectionHeader title="Certifications" />
+          <div className="mt-6 flex flex-col gap-3">
+            {skills.certifications.map((cert) => (
+              <div
+                key={cert.name}
+                className="flex items-center gap-3 rounded-xl border border-border bg-bg-subtle px-4 py-3"
+              >
+                <HiOutlineAcademicCap className="text-lg text-black" />
+                <div>
+                  <p className="text-sm font-medium text-black font-heading">
+                    {cert.name}
+                  </p>
+                  <p className="text-xs text-secondary">{cert.issuer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </section>
   );
 }

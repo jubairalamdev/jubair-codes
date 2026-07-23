@@ -35,7 +35,7 @@ export default function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      <nav className="mx-auto flex max-w-[1200px] items-center justify-between rounded-full border border-border bg-white/90 px-8 py-3 shadow-sm backdrop-blur-md mt-4">
+      <nav className="mx-auto flex max-w-[1200px] items-center justify-between rounded-full border border-border bg-white/90 px-8  py-3 shadow-sm backdrop-blur-sm mt-4">
         <span className="text-sm font-semibold text-black font-heading">Jubair</span>
 
         <ul className="hidden md:flex items-center gap-8">
