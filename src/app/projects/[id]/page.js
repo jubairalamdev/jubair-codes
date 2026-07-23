@@ -17,7 +17,7 @@ export default function ProjectDetails({ params }) {
         <HiArrowLeft className="text-xs" /> Back to Projects
       </Link>
 
-      <article className="rounded-3xl border border-border bg-white p-10 shadow-sm">
+      <article className="rounded-3xl border border-border bg-white p-6 md:p-10 shadow-sm">
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-accent" />

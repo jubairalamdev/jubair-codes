@@ -12,6 +12,7 @@ const inter = Inter({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://jubair.dev"),
   title: {
     default: "Jubair | Software Developer",
     template: "%s | Jubair",

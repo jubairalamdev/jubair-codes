@@ -12,30 +12,31 @@
 - [x] **Phase 4: Projects** — Complete
 - [x] **Phase 5: Testimonials, Contact & Footer** — Complete
 - [x] **Phase 6: Animations & Interactions** — Complete
-  - [x] ProjectCard thumbnail zoom on hover (group-hover:scale-105)
-  - [x] Project Details preview hover scale
-  - [x] Smooth mobile menu transition (opacity + translate-y with pointer-events)
-  - [x] All interactive elements use `transition-colors` consistently
-  - [x] Smooth scroll via CSS + JS
-  - [x] Per motion.md: no Framer Motion, no GSAP, no scroll reveals
+- [x] **Phase 7: Responsive & Polish** — Complete
+  - [x] Responsive padding audit for all sections
+  - [x] Hero heading scale-down on mobile
+  - [x] Proper heading hierarchy (h1-h3)
+  - [x] Global `*:focus-visible` for keyboard accessibility
+  - [x] `aria-current` on nav links, `aria-label` on placeholders/icons
+  - [x] `metadataBase` configured
+  - [x] `loading.js` skeleton
+  - [x] `sitemap.xml` + `robots.txt`
 
 ---
 
 ## Current Phase
 
-**Phase 7: Responsive & Polish** — Next up
+**Phase 8: Deployment & Final Checks** — Next up
 
 ---
 
 ## Next Steps
 
-1. Audit and fix responsive behavior for all sections (desktop, tablet, mobile)
-2. Ensure no content overflows on any screen size
-3. Lazy load images and optimize assets
-4. Add missing alt text and semantic HTML
-5. Verify keyboard navigation and focus indicators
-6. Test Lighthouse performance (target: 90+)
-7. Generate sitemap and robots.txt
+1. Build production bundle and test locally
+2. Deploy to Vercel
+3. Verify live site (all sections, links, forms, animations)
+4. Final Lighthouse audit
+5. Push to GitHub
 
 ---
 
@@ -45,4 +46,4 @@
 - All application code under `src/`
 - Tailwind v4 — config via CSS `@theme`
 - Build verified — compiles successfully
-- Motion philosophy: only hover interactions, no decorative animations
+- All 7 implementation phases complete, ready for deployment

@@ -9,9 +9,9 @@ export default function SectionHeader({ title, icon: Icon }) {
         ) : (
           <span className="h-2 w-2 rounded-full bg-accent" />
         )}
-        <span className="text-sm font-medium text-secondary uppercase tracking-wider">
+        <h2 className="text-sm font-medium text-secondary uppercase tracking-wider">
           {title}
-        </span>
+        </h2>
       </div>
       <div className="h-px w-full bg-border" />
     </div>

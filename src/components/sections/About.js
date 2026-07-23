@@ -7,12 +7,12 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col gap-6 rounded-3xl border border-border bg-white p-10 shadow-sm"
+      className="flex flex-col gap-6 rounded-3xl border border-border bg-white p-6 md:p-10 shadow-sm"
     >
       <SectionHeader title="About" />
 
       <div className="flex flex-col items-center gap-6">
-        <div className="h-28 w-28 rounded-full border border-border bg-bg-subtle shadow-sm" />
+        <div className="h-20 w-20 md:h-28 md:w-28 rounded-full border border-border bg-bg-subtle shadow-sm" role="img" aria-label="Profile photo placeholder" />
 
         <div className="flex flex-col gap-4 text-left">
           <p className="text-base leading-relaxed text-secondary">

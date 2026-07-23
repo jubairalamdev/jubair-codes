@@ -65,7 +65,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="rounded-3xl border border-border bg-white p-10 shadow-sm"
+      className="rounded-3xl border border-border bg-white p-6 md:p-10 shadow-sm"
     >
       <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div className="flex flex-col gap-6">

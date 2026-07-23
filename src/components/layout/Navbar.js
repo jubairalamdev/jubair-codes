@@ -34,6 +34,7 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={(e) => handleNavClick(e, link.href)}
+                  aria-current={isActive ? "true" : undefined}
                   className={`text-sm font-medium transition-colors ${
                     isActive
                       ? "text-primary"
@@ -82,6 +83,7 @@ export default function Navbar() {
                   <a
                     href={link.href}
                     onClick={(e) => handleNavClick(e, link.href)}
+                    aria-current={isActive ? "true" : undefined}
                     className={`block rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
                       isActive
                         ? "text-primary bg-primary/5"

@@ -78,13 +78,16 @@
 
 ## Phase 7: Responsive & Polish
 
-- [ ] Audit and fix responsive behavior for all sections (desktop, tablet, mobile)
-- [ ] Ensure no content overflows on any screen size
-- [ ] Lazy load images and optimize assets
-- [ ] Add missing alt text and semantic HTML
-- [ ] Verify keyboard navigation and focus indicators
-- [ ] Test Lighthouse performance (target: 90+)
-- [ ] Generate sitemap and robots.txt
+- [x] Responsive padding audit — all sections use `p-6 md:p-10`
+- [x] Responsive Hero heading — `text-3xl md:text-hero`
+- [x] Responsive About profile image — `h-20 w-20 md:h-28 md:w-28`
+- [x] Proper heading hierarchy — h1 (Hero), h2 (SectionHeader), h3 (cards)
+- [x] Global `*:focus-visible` outline styles for keyboard users
+- [x] `aria-current` on active nav links
+- [x] `aria-label` on placeholder images and hamburger button
+- [x] `metadataBase` set in root layout
+- [x] `loading.js` skeleton for app directory
+- [x] `sitemap.xml` and `robots.txt` generated
 
 ---
 

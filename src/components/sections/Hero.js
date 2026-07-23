@@ -20,7 +20,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden rounded-3xl border border-border bg-white p-12 shadow-sm"
+      className="relative overflow-hidden rounded-3xl border border-border bg-white p-8 md:p-12 shadow-sm"
     >
       <div className="pointer-events-none absolute -top-40 -right-40 h-80 w-80 rounded-full bg-accent/5 blur-3xl" />
 
@@ -30,7 +30,7 @@ export default function Hero() {
           Available for opportunities
         </span>
 
-        <h1 className="max-w-3xl text-hero font-bold text-black leading-tight">
+        <h1 className="max-w-3xl text-3xl md:text-hero font-bold text-black leading-tight">
           {personalInfo.name}.<br />
           {personalInfo.title}.
         </h1>

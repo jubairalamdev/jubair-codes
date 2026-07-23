@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="rounded-3xl border border-border bg-white p-10 shadow-sm"
+      className="rounded-3xl border border-border bg-white p-6 md:p-10 shadow-sm"
     >
       <SectionHeader title="Skills" />
 
