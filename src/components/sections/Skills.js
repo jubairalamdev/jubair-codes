@@ -17,17 +17,17 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import Badge from "@/components/shared/Badge";
 import { getSkills } from "@/services/skills";
 
-const iconMap = {
-  React: FaReact,
-  "Next.js": SiNextdotjs,
-  TypeScript: SiTypescript,
-  "Tailwind CSS": SiTailwindcss,
-  "Node.js": FaNodeJs,
-  Python: FaPython,
-  PostgreSQL: SiPostgresql,
-  Git: FaGitAlt,
-  Docker: FaDocker,
-  Vercel: SiVercel,
+const skillIcons = {
+  React: { icon: FaReact, color: "#61DAFB" },
+  "Next.js": { icon: SiNextdotjs, color: "#000000" },
+  TypeScript: { icon: SiTypescript, color: "#3178C6" },
+  "Tailwind CSS": { icon: SiTailwindcss, color: "#06B6D4" },
+  "Node.js": { icon: FaNodeJs, color: "#339933" },
+  Python: { icon: FaPython, color: "#3776AB" },
+  PostgreSQL: { icon: SiPostgresql, color: "#4169E1" },
+  Git: { icon: FaGitAlt, color: "#F05032" },
+  Docker: { icon: FaDocker, color: "#2496ED" },
+  Vercel: { icon: SiVercel, color: "#000000" },
 };
 
 export default async function Skills() {
@@ -47,11 +47,18 @@ export default async function Skills() {
               {category.name}
             </h3>
             <div className="flex flex-wrap gap-2">
-              {category.skills.map((skill) => (
-                <Badge key={skill.name} icon={iconMap[skill.name]}>
-                  {skill.name}
-                </Badge>
-              ))}
+              {category.skills.map((skill) => {
+                const matched = skillIcons[skill.name];
+                return (
+                  <Badge
+                    key={skill.name}
+                    icon={matched?.icon}
+                    iconColor={matched?.color}
+                  >
+                    {skill.name}
+                  </Badge>
+                );
+              })}
             </div>
           </div>
         ))}
